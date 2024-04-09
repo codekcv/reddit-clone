@@ -3,6 +3,7 @@ import redditText from "@/public/logo-name.svg";
 import redditMobile from "@/public/reddit-full.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { ThemeToggle } from "./theme-toggle";
 
 export function Navbar() {
   return (
@@ -21,7 +22,7 @@ export function Navbar() {
         />
       </Link>
 
-      <Button>Hello</Button>
+      <ThemeToggle />
     </nav>
   );
 }
