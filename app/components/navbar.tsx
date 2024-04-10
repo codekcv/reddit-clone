@@ -35,7 +35,7 @@ export async function Navbar() {
         <ThemeToggle />
 
         {user ? (
-          <UserDropdown />
+          <UserDropdown userImage={user.picture} />
         ) : (
           <div className="flex items-center gap-x-4">
             <Button variant="secondary" asChild>
